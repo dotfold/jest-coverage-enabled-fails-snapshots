@@ -1,0 +1,56 @@
+{
+  "name": "jest-coverage-enabled-fails-snapshots",
+  "version": "1.0.0",
+  "description": "Demonstrate failing Jest snapshot tests when coverage is enabled",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "repository": "",
+  "devDependencies": {
+    "babel-jest": "^17.0.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0",
+    "enzyme": "2.6.0",
+    "enzyme-to-json": "1.4.4",
+    "jest": "17.0.2",
+    "react-addons-test-utils": "15.4.1",
+    "react-test-renderer": "15.4.1"
+  },
+  "dependencies": {
+    "react": "15.4.1",
+    "react-dom": "15.4.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageDirectory": "<rootDir>/test/reports/coverage",
+    "coverageReporters": [
+      "cobertura",
+      "html"
+    ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "moduleFileExtensions": [
+      "jsx",
+      "js",
+      "json"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/(build|config|node_modules)/"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "testEnvironment": "jsdom"
+  }
+}
