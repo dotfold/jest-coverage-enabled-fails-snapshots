@@ -1,0 +1,11 @@
+exports[`<FunctionalComponent /> should render correctly with enzyme 1`] = `
+<div>
+  This is a functional component
+</div>
+`;
+
+exports[`<FunctionalComponent /> should render correctly with react-test-renderer 1`] = `
+<div>
+  This is a functional component
+</div>
+`;

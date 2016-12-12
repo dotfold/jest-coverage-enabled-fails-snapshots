@@ -1,0 +1,24 @@
+exports[`<ClassComponent /> should render correctly with enzyme 1`] = `
+<div>
+  This is a Class Component that contains a FunctionalComponent - this one fails the snapshot after enabling coverage
+  <FunctionalComponent />
+  And here is AnotherClassComponent - this one is ok in the snapshot
+  <AnotherClassComponent />
+</div>
+`;
+
+exports[`<ClassComponent /> should render correctly with react-test-renderer 1`] = `
+<div>
+  This is a Class Component that contains a FunctionalComponent - this one fails the snapshot after enabling coverage
+  <div>
+    This is a functional component
+  </div>
+  And here is AnotherClassComponent - this one is ok in the snapshot
+  <div>
+    This is a Class Component that contains a FunctionalComponent
+    <div>
+      This is a functional component
+    </div>
+  </div>
+</div>
+`;
